@@ -37,3 +37,7 @@
 
 # dashboard showcase
 ![images](images/dashboard.gif)
+
+# Telegram alarm showcase
+![images](images/Telegram_alarm.gif)
+
