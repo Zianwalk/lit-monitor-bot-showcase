@@ -50,8 +50,6 @@ flowchart TD
     end
 ```
 
----
-
 ## 🚀 核心功能
 
 - 透過官方 API 即時擷取 Buyback 數據  
