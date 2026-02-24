@@ -24,6 +24,7 @@
 ![images](images/Bot-FlowChart.png)
 
 ```mermaid
+
     flowchart TD
     
         API[官方 API 查詢]
