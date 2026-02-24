@@ -23,6 +23,27 @@
 ## 🏗 系統架構
 ![images](images/Bot-FlowChart.png)
 
+flowchart TD
+
+    API[官方 API 查詢]
+
+    subgraph 即時監控與告警流程
+        API --> POLL[定時輪詢]
+        POLL --> DELTA[資產變化量計算]
+        DELTA -->|超過閾值| ALERT[發送 Telegram 即時警報]
+    end
+
+    subgraph 整點記錄與視覺化流程
+        API --> HOUR[整點輪詢]
+        HOUR --> CSV[寫入 CSV 歷史紀錄]
+        CSV --> tg_record[發送 Telegram 整點推播]
+    end
+
+    subgraph Web Dashboard
+        CSV --> |手動餵入CSV|WEB[網頁端解析]
+        WEB --> DASH[視覺化儀表板]
+    end
+    
 ---
 
 ## 🚀 核心功能
