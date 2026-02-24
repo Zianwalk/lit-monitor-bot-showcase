@@ -52,7 +52,7 @@ flowchart TD
 - 透過官方 API 即時擷取 Buyback 數據  
 - 每小時 Buyback 變化量計算  
 - 長期歷史資料累積與回溯  
-- Buyback 強度趨勢分析  
+- Buyback 強度分析  
 - Telegram 即時 alarm  
 - Web dashboard 視覺化儀表板  
 
