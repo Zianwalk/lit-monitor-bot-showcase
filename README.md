@@ -32,7 +32,7 @@ flowchart TD
 
     API[官方 API 查詢]
 
-    subgraph 即時監控與Telegram-Alerts
+    subgraph 即時監控與
         API --> POLL[定時輪詢]
         POLL --> DELTA[資產變化量計算]
         DELTA -->|超過閾值| ALERT[發送 Telegram 即時警報]
