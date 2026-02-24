@@ -21,7 +21,6 @@
 ---
 
 ## 🏗 系統架構
-![images](images/Bot-FlowChart.png)
 
 ```mermaid
 flowchart TD
